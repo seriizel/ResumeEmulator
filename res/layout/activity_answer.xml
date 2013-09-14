@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textResume"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:autoLink="email|phone" />
+
+           <EditText
+               android:id="@+id/editLetter"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom="@dimen/activity_vertical_margin"
+               android:layout_marginLeft="@dimen/activity_horizontal_margin"
+               android:layout_marginRight="@dimen/activity_horizontal_margin"
+               android:layout_marginTop="@dimen/activity_vertical_margin"
+               android:ems="10" 
+               android:minLines="5"
+               android:inputType="textMultiLine"
+               android:hint="@string/Letter"/>
+           <requestFocus />
+
+           <Button
+               android:id="@+id/buttonAnswer"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:text="@string/Answer"/>
+           
+    </LinearLayout>
+
+</ScrollView>

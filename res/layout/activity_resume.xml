@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+  <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical" >
+
+      <EditText
+         android:id="@+id/editFIO"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="@dimen/activity_vertical_margin"
+         android:layout_marginLeft="@dimen/activity_horizontal_margin"
+         android:layout_marginRight="@dimen/activity_horizontal_margin"
+         android:layout_marginTop="@dimen/activity_vertical_margin"
+         android:ems="10"
+         android:hint="@string/FIO"
+         android:inputType="textPersonName" />
+      <requestFocus />
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="@dimen/activity_vertical_margin"
+          android:layout_marginLeft="@dimen/activity_horizontal_margin"
+          android:layout_marginRight="@dimen/activity_horizontal_margin"
+          android:layout_marginTop="@dimen/activity_vertical_margin" >
+
+          <TextView
+              android:id="@+id/textDate"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerVertical="true"
+              android:layout_toLeftOf="@+id/buttonDate" />
+          
+          <Button
+              android:id="@+id/buttonDate"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerHorizontal="true"
+              android:layout_centerVertical="true"
+              android:text="@string/Date"/>
+
+          
+      </RelativeLayout>
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="@dimen/activity_vertical_margin"
+          android:layout_marginLeft="@dimen/activity_horizontal_margin"
+          android:layout_marginRight="@dimen/activity_horizontal_margin"
+          android:layout_marginTop="@dimen/activity_vertical_margin" >
+
+        <TextView
+            android:id="@+id/textGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"           
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/spinnerGender"
+            android:text="@string/Gender" />
+        <Spinner
+            android:id="@+id/spinnerGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"            
+            android:entries="@array/Gender" />
+
+      </RelativeLayout>
+     <EditText
+        android:id="@+id/editPost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:ems="10"
+        android:hint="@string/Post"
+        android:inputType="textCapWords"/>
+
+     <EditText
+         android:id="@+id/editSalary"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="@dimen/activity_vertical_margin"
+         android:layout_marginLeft="@dimen/activity_horizontal_margin"
+         android:layout_marginRight="@dimen/activity_horizontal_margin"
+         android:layout_marginTop="@dimen/activity_vertical_margin"
+         android:ems="10"
+         android:hint="@string/Salary"
+         android:inputType="number" />
+
+     <EditText
+         android:id="@+id/editPhone"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="@dimen/activity_vertical_margin"
+         android:layout_marginLeft="@dimen/activity_horizontal_margin"
+         android:layout_marginRight="@dimen/activity_horizontal_margin"
+         android:layout_marginTop="@dimen/activity_vertical_margin"
+         android:ems="10"
+         android:hint="@string/Phone"
+         android:inputType="phone" />
+
+     <EditText
+         android:id="@+id/editEmail"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="@dimen/activity_vertical_margin"
+         android:layout_marginLeft="@dimen/activity_horizontal_margin"
+         android:layout_marginRight="@dimen/activity_horizontal_margin"
+         android:layout_marginTop="@dimen/activity_vertical_margin"
+         android:ems="10"
+         android:hint="@string/Email"
+         android:inputType="textEmailAddress" />
+
+     <Button
+         android:id="@+id/buttonSend"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center"
+         android:layout_margin="@dimen/activity_horizontal_margin"
+         android:text="@string/Send" />
+
+    </LinearLayout>
+        
+</ScrollView>

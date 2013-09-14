@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ResumeEmulator</string>
+    <string name="action_settings">Settings</string>
+    <string name="FIO">ФИО</string>
+    <string name="Post">Должность</string>
+    <string name="Salary">Зарплата</string>
+    <string name="Phone">Телефон</string>
+    <string name="Email">E-mail</string>
+    <string name="Send">Отправить резюме</string>
+    <string name="Gender">Пол:</string>
+    <string name="Date">Выбрать дату</string>
+    <string name="Letter">Письмо соискателю</string>
+    <string name="Answer">Отправить ответ</string>
+    <string-array name="Gender">
+        <item>Мужской</item>
+        <item>Женский</item>
+    </string-array>
+    
+</resources>
